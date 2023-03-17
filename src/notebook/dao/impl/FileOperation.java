@@ -23,17 +23,17 @@ public class FileOperation implements Operation<String> {
         List<String> lines = new ArrayList<>();
         try {
             File file = new File(fileName);
-            //создаем объект FileReader для объекта File
+            //СЃРѕР·РґР°РµРј РѕР±СЉРµРєС‚ FileReader РґР»СЏ РѕР±СЉРµРєС‚Р° File
             FileReader fr = new FileReader(file);
-            //создаем BufferedReader с существующего FileReader для построчного считывания
+            //СЃРѕР·РґР°РµРј BufferedReader СЃ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ FileReader РґР»СЏ РїРѕСЃС‚СЂРѕС‡РЅРѕРіРѕ СЃС‡РёС‚С‹РІР°РЅРёСЏ
             BufferedReader reader = new BufferedReader(fr);
-            // считаем сначала первую строку
+            // СЃС‡РёС‚Р°РµРј СЃРЅР°С‡Р°Р»Р° РїРµСЂРІСѓСЋ СЃС‚СЂРѕРєСѓ
             String line = reader.readLine();
             if (line != null) {
                 lines.add(line);
             }
             while (line != null) {
-                // считываем остальные строки в цикле
+                // СЃС‡РёС‚С‹РІР°РµРј РѕСЃС‚Р°Р»СЊРЅС‹Рµ СЃС‚СЂРѕРєРё РІ С†РёРєР»Рµ
                 line = reader.readLine();
                 if (line != null) {
                     lines.add(line);
@@ -50,9 +50,9 @@ public class FileOperation implements Operation<String> {
     public void saveAll(List<String> data) {
         try (FileWriter writer = new FileWriter(fileName, false)) {
             for (String line : data) {
-                // запись всей строки
+                // Р·Р°РїРёСЃСЊ РІСЃРµР№ СЃС‚СЂРѕРєРё
                 writer.write(line);
-                // запись по символам
+                // Р·Р°РїРёСЃСЊ РїРѕ СЃРёРјРІРѕР»Р°Рј
                 writer.append('\n');
             }
             writer.flush();

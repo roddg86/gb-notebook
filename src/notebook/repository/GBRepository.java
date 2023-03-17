@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Репозиторий, для выполнения CreateReadUpdateDelete (CRUD) операций
- * @param <E> тип модели данных
- * @param <I> тип ID модели данных E
+ * Р РµРїРѕР·РёС‚РѕСЂРёР№, РґР»СЏ РІС‹РїРѕР»РЅРµРЅРёСЏ CreateReadUpdateDelete (CRUD) РѕРїРµСЂР°С†РёР№
+ * @param <E> С‚РёРї РјРѕРґРµР»Рё РґР°РЅРЅС‹С…
+ * @param <I> С‚РёРї ID РјРѕРґРµР»Рё РґР°РЅРЅС‹С… E
  */
 public interface GBRepository<E, I> {
     List<E> findAll();
