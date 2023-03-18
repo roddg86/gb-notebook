@@ -1,7 +1,7 @@
 package notebook.controller;
 
 import notebook.model.User;
-import notebook.repository.GBRepository;
+import notebook.model.repository.GBRepository;
 
 import java.util.List;
 import java.util.Objects;
