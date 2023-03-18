@@ -18,6 +18,7 @@ public class UserView {
         Commands com;
 
         while (true) {
+            System.out.println();
             String command = prompt("Введите команду: ");
             com = Commands.valueOf(command);
             if (com == Commands.EXIT) return;
@@ -42,12 +43,18 @@ public class UserView {
                     List<User> users = userController.getAllUsers();
                     for(User user: users) {
                         System.out.println(user);
+                        System.out.println();
                     }
                     break;
                 case UPDATE:
-                    String userId = prompt("Enter user id: ");
+                    String userId = prompt("Введите user id: ");
                     userController.updateUser(userId, createUser());
                     break;
+                case DELETE:
+                    String deleteUserId = prompt("Введите user id: ");
+                    userController.deleteUser(deleteUserId);
+                    break;
+
             }
         }
     }
