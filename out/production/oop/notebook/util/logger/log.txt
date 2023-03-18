@@ -23,3 +23,11 @@ INFO: Запрошены все пользователи
 INFO: Изменен пользователь 7
 мар 19, 2023 8:28:41 AM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи
+мар 19, 2023 8:29:34 AM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 19, 2023 8:42:58 AM notebook.controller.UserController saveUser
+INFO: Создан пользователь: Михаил Светлов
+мар 19, 2023 8:43:06 AM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 19, 2023 8:43:40 AM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи

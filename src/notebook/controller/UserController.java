@@ -28,7 +28,7 @@ public class UserController {
     }
 
     public void saveUser(User user) {
-        LOGGER.log(Level.INFO, "Создан пользователь: " + user.getFirstName() + " " + user.getLastName() + " " + user.getPhone());
+        LOGGER.log(Level.INFO, "Создан пользователь: " + user.getFirstName() + " " + user.getLastName());
         repository.create(user);
     }
 
