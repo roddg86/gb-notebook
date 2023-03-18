@@ -4,6 +4,7 @@ import notebook.controller.UserController;
 import notebook.model.User;
 import notebook.util.Commands;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class UserView {
@@ -37,6 +38,16 @@ public class UserView {
                         throw new RuntimeException(e);
                     }
                     break;
+                case LIST:
+                    List<User> users = userController.getAllUsers();
+                    for(User user: users) {
+                        System.out.println(user);
+                    }
+                    break;
+                case UPDATE:
+                    String userId = prompt("Enter user id: ");
+                    userController.updateUser(userId, createUser());
+                    break;
             }
         }
     }
@@ -45,5 +56,12 @@ public class UserView {
         Scanner in = new Scanner(System.in);
         System.out.print(message);
         return in.nextLine();
+    }
+
+    private User createUser() {
+        String firstName = prompt("Имя: ");
+        String lastName = prompt("Фамилия: ");
+        String phone = prompt("Номер телефона: ");
+        return new User(firstName, lastName, phone);
     }
 }
