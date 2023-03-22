@@ -36,3 +36,11 @@ INFO: Запрошены все пользователи
 INFO: Изменен пользователь 8
 мар 19, 2023 8:46:14 AM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи
+мар 22, 2023 3:29:15 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 3:29:26 PM notebook.controller.UserController deleteUser
+INFO: Пользователь 8 удален
+мар 22, 2023 3:29:36 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 9:15:21 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи

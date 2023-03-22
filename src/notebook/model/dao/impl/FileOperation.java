@@ -1,12 +1,13 @@
 package notebook.model.dao.impl;
 
-import notebook.model.dao.Operation;
+import notebook.model.dao.OperationReadAll;
+import notebook.model.dao.OperationSaveAll;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileOperation implements Operation<String> {
+public class FileOperation implements OperationSaveAll<String>, OperationReadAll<String> {
     private final String fileName;
 
     public FileOperation(String fileName) {

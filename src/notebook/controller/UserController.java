@@ -2,25 +2,17 @@ package notebook.controller;
 
 import notebook.model.User;
 import notebook.model.repository.GBRepository;
+import notebook.util.logger.Log;
 
-import java.io.FileInputStream;
 import java.util.List;
 import java.util.Objects;
 import java.util.logging.Level;
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class UserController {
 
-    static Logger LOGGER;
-    static {
-        try (FileInputStream ins = new FileInputStream("src/notebook/util/logger/log.config")) { // полный путь до файла с конфигами
-            LogManager.getLogManager().readConfiguration(ins);
-            LOGGER = Logger.getLogger(UserController.class.getName());
-        } catch (Exception ignore) {
-            ignore.printStackTrace();
-        }
-    }
+    private static final Logger LOGGER = Log.log(UserController.class.getName());
+
     private final GBRepository repository;
 
     public UserController(GBRepository repository) {
