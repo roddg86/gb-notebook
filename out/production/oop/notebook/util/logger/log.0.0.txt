@@ -1,12 +1,3 @@
-мар 19, 2023 8:05:12 AM notebook.controller.UserController updateUser
-INFO: Изменен пользователь 6
-мар 19, 2023 8:05:51 AM notebook.controller.UserController deleteUser
-INFO: Пользователь 6 удален
-мар 19, 2023 8:05:57 AM notebook.controller.UserController getAllUsers
-INFO: Запрошены все пользователи
-мар 19, 2023 8:09:12 AM notebook.controller.UserController readUser
-INFO: Запрошен пользователь 8
-мар 19, 2023 8:12:27 AM notebook.controller.UserController readUser
 INFO: Запрошен пользователь 8
 мар 19, 2023 8:14:13 AM notebook.controller.UserController saveUser
 INFO: Создан пользователь: Иван Грозный 9990099
@@ -43,4 +34,22 @@ INFO: Пользователь 8 удален
 мар 22, 2023 3:29:36 PM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи
 мар 22, 2023 9:15:21 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 9:22:32 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 9:34:53 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:02:59 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:03:09 PM notebook.controller.UserController deleteUser
+INFO: Пользователь 7 удален
+мар 22, 2023 10:03:34 PM notebook.controller.UserController readUser
+INFO: Запрошен пользователь 5
+мар 22, 2023 10:04:34 PM notebook.controller.UserController updateUser
+INFO: Изменен пользователь 5
+мар 22, 2023 10:06:46 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:16:34 PM notebook.controller.UserController saveUser
+INFO: Создан пользователь: Никодим Поплавский
+мар 22, 2023 10:16:46 PM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи

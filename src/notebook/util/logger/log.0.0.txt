@@ -37,3 +37,21 @@ INFO: Запрошены все пользователи
 INFO: Запрошены все пользователи
 мар 22, 2023 9:22:32 PM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи
+мар 22, 2023 9:34:53 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:02:59 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:03:09 PM notebook.controller.UserController deleteUser
+INFO: Пользователь 7 удален
+мар 22, 2023 10:03:34 PM notebook.controller.UserController readUser
+INFO: Запрошен пользователь 5
+мар 22, 2023 10:04:34 PM notebook.controller.UserController updateUser
+INFO: Изменен пользователь 5
+мар 22, 2023 10:06:46 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:16:34 PM notebook.controller.UserController saveUser
+INFO: Создан пользователь: Никодим Поплавский
+мар 22, 2023 10:16:46 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 22, 2023 10:32:59 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
