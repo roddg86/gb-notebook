@@ -53,3 +53,7 @@ INFO: Запрошены все пользователи
 INFO: Создан пользователь: Никодим Поплавский
 мар 22, 2023 10:16:46 PM notebook.controller.UserController getAllUsers
 INFO: Запрошены все пользователи
+мар 22, 2023 10:32:59 PM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи
+мар 23, 2023 10:22:26 AM notebook.controller.UserController getAllUsers
+INFO: Запрошены все пользователи

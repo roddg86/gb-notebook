@@ -1,15 +1,15 @@
 package notebook.model.repository.impl;
 
 import notebook.model.dao.impl.FileOperation;
-import notebook.model.repository.*;
 import notebook.util.mapper.impl.UserMapper;
 import notebook.model.User;
+import notebook.model.repository.GBRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class UserRepository implements GBRepositoryCreate, GBRepositoryUpdate, GBRepositoryFindById, GBRepositoryDelete, GBRepositoryFindAll {
+public class UserRepository implements GBRepository {
     private final UserMapper mapper;
     private final FileOperation operation;
 

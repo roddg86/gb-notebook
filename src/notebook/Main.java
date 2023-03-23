@@ -2,7 +2,7 @@ package notebook;
 
 import notebook.controller.UserController;
 import notebook.model.dao.impl.FileOperation;
-import notebook.model.repository.*;
+import notebook.model.repository.GBRepository;
 import notebook.model.repository.impl.UserRepository;
 import notebook.view.UserView;
 
@@ -13,14 +13,8 @@ public class Main {
     public static void main(String[] args) {
         createDB();
         FileOperation fileOperation = new FileOperation(DB_PATH);
-
-        GBRepositoryCreate repositoryCreate = new UserRepository(fileOperation);
-        GBRepositoryDelete repositoryDelete = new UserRepository(fileOperation);
-        GBRepositoryFindAll repositoryFindAll = new UserRepository(fileOperation);
-        GBRepositoryFindById repositoryFindById = new UserRepository(fileOperation);
-        GBRepositoryUpdate repositoryUpdate = new UserRepository(fileOperation);
-
-        UserController controller = new UserController(repositoryCreate, repositoryDelete,repositoryFindAll,repositoryFindById,repositoryUpdate);
+        GBRepository repository = new UserRepository(fileOperation);
+        UserController controller = new UserController(repository);
         UserView view = new UserView(controller);
         view.run();
     }
