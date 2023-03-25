@@ -1,7 +1,7 @@
-package notebook.util.mapper.impl;
+package com.github.roddg86.notebook.util.mapper.impl;
 
-import notebook.util.mapper.Mapper;
-import notebook.model.User;
+import com.github.roddg86.notebook.util.mapper.Mapper;
+import com.github.roddg86.notebook.model.User;
 
 public class UserMapper implements Mapper<User, String> {
     @Override

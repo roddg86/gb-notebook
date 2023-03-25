@@ -1,4 +1,4 @@
-package notebook.model;
+package com.github.roddg86.notebook.model;
 
 public class User {
     private Long id;

@@ -1,4 +1,4 @@
-package notebook.util;
+package com.github.roddg86.notebook.util;
 
 public enum Commands {
     NONE,

@@ -1,8 +1,8 @@
-package notebook.controller;
+package com.github.roddg86.notebook.controller;
 
-import notebook.model.User;
-import notebook.model.repository.GBRepository;
-import notebook.util.logger.Log;
+import com.github.roddg86.notebook.model.User;
+import com.github.roddg86.notebook.model.repository.GBRepository;
+import com.github.roddg86.notebook.util.logger.Log;
 
 import java.util.List;
 import java.util.Objects;

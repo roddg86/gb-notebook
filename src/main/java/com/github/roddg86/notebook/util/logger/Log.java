@@ -1,4 +1,4 @@
-package notebook.util.logger;
+package com.github.roddg86.notebook.util.logger;
 
 import java.io.FileInputStream;
 import java.util.logging.LogManager;
@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 public class Log {
     static {
-        try(FileInputStream in = new FileInputStream("src/notebook/util/logger/log.config")) { //полный путь до файла с конфигами
+        try(FileInputStream in = new FileInputStream("src/main/java/com/github/roddg86/notebook/util/logger/log.config")) { //полный путь до файла с конфигами
             LogManager.getLogManager().readConfiguration(in);
         } catch (Exception e){
             e.printStackTrace();

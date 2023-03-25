@@ -1,8 +1,8 @@
-package notebook.model.repository.impl;
+package com.github.roddg86.notebook.model.repository.impl;
 
-import notebook.util.mapper.impl.UserMapper;
-import notebook.model.User;
-import notebook.model.repository.GBRepository;
+import com.github.roddg86.notebook.util.mapper.impl.UserMapper;
+import com.github.roddg86.notebook.model.User;
+import com.github.roddg86.notebook.model.repository.GBRepository;
 
 import java.io.*;
 import java.util.ArrayList;

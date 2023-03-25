@@ -1,8 +1,8 @@
-package notebook.view;
+package com.github.roddg86.notebook.view;
 
-import notebook.controller.UserController;
-import notebook.model.User;
-import notebook.util.Commands;
+import com.github.roddg86.notebook.controller.UserController;
+import com.github.roddg86.notebook.model.User;
+import com.github.roddg86.notebook.util.Commands;
 
 import java.util.List;
 import java.util.Scanner;

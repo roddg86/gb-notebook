@@ -1,7 +1,5 @@
-#### ДЗ Рефакторинг и\или оптимизация проекта предыдущего дз с учетом теоретических основ SOLID’а
+#### Итоговая работа
 
-Так как в классе FileOperation saveAll() выполняет тоже что и метод write() в UserRepository, удалим saveAll(),
+Подключил Gradle
 
-и перенесем readAll() в UserRepository 
 
-FileOperation удалим из-за задвоения функционала с UserRepository.
