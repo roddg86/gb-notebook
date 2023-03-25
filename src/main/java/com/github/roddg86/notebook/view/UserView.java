@@ -32,7 +32,7 @@ public class UserView {
                 case READ:
                     String id = prompt("Идентификатор пользователя: ");
                     try {
-                        User user = userController.readUser(Long.parseLong(id));
+                        User user = userController.findUserById(Long.parseLong(id));
                         System.out.println(user);
                         System.out.println();
                     } catch (Exception e) {
@@ -54,7 +54,6 @@ public class UserView {
                     String deleteUserId = prompt("Введите user id: ");
                     userController.deleteUser(deleteUserId);
                     break;
-
             }
         }
     }

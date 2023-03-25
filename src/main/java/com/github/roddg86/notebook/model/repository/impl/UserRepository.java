@@ -77,13 +77,6 @@ public class UserRepository implements GBRepository {
     }
 
     @Override
-    public Optional<User> findById(Long id) {
-        // возвращаем заглушку в виде пустого empty для метода реализацию которого нужно написать
-        // компиляции проекта, и для отображения структуры проекта
-        return Optional.empty();
-    }
-
-    @Override
     public Optional<User> update(Long userId, User update) {
         List<User> users = findAll();
         User editUser = users.stream()
@@ -114,7 +107,6 @@ public class UserRepository implements GBRepository {
         for (User u: users) {
             lines.add(mapper.toInput(u));
         }
-
         try (FileWriter writer = new FileWriter(fileName, false)) {
             for (String line : lines) {
                 // запись всей строки

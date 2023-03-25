@@ -24,7 +24,7 @@ public class UserController {
         repository.create(user);
     }
 
-    public User readUser(Long userId) throws Exception {
+    public User findUserById(Long userId) throws Exception {
         LOGGER.log(Level.INFO, "Запрошен пользователь " + userId);
         List<User> users = repository.findAll();
         for (User user : users) {
@@ -35,10 +35,6 @@ public class UserController {
 
         throw new RuntimeException("User not found");
 
-    }
-
-    public User findUserById(long id) {
-        return repository.findById(id).orElseThrow(()-> new RuntimeException("User not found."));
     }
 
     public List<User> getAllUsers() {
