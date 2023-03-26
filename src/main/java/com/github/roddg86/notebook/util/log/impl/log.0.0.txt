@@ -1,0 +1,6 @@
+мар. 26, 2023 1:45:37 PM com.github.roddg86.notebook.controller.UserControllerDecorator findUserById
+INFO: Запрошен пользователь 5
+мар. 26, 2023 1:48:26 PM com.github.roddg86.notebook.controller.UserControllerDecorator getAllUsers
+INFO: Запрошены все пользователи
+мар. 26, 2023 1:49:54 PM com.github.roddg86.notebook.controller.UserControllerDecorator findUserById
+INFO: Запрошен пользователь 5
