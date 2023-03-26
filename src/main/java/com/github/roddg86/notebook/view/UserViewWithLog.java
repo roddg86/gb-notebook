@@ -23,13 +23,13 @@ public class UserViewWithLog {
             com = Commands.valueOf(command);
             if (com == Commands.EXIT) return;
             switch (com) {
-                case CREATE:
+                case CREATE -> {
                     String firstName = prompt("Имя: ");
                     String lastName = prompt("Фамилия: ");
                     String phone = prompt("Номер телефона: ");
-                    userControllerDecorator.saveUser(new User(firstName, lastName, phone));
-                    break;
-                case READ:
+                    userControllerDecorator.saveUser(User.builder().firstName(firstName).lastName(lastName).phone(phone).build());
+                }
+                case READ -> {
                     String id = prompt("Идентификатор пользователя: ");
                     try {
                         User user = userControllerDecorator.findUserById(Long.parseLong(id));
@@ -38,22 +38,22 @@ public class UserViewWithLog {
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
-                    break;
-                case LIST:
+                }
+                case LIST -> {
                     List<User> users = userControllerDecorator.getAllUsers();
-                    for(User user: users) {
+                    for (User user : users) {
                         System.out.println(user);
                         System.out.println();
                     }
-                    break;
-                case UPDATE:
+                }
+                case UPDATE -> {
                     String userId = prompt("Введите user id: ");
                     userControllerDecorator.updateUser(userId, createUser());
-                    break;
-                case DELETE:
+                }
+                case DELETE -> {
                     String deleteUserId = prompt("Введите user id: ");
                     userControllerDecorator.deleteUser(deleteUserId);
-                    break;
+                }
             }
         }
     }
@@ -68,6 +68,6 @@ public class UserViewWithLog {
         String firstName = prompt("Имя: ");
         String lastName = prompt("Фамилия: ");
         String phone = prompt("Номер телефона: ");
-        return new User(firstName, lastName, phone);
+        return User.builder().firstName(firstName).lastName(lastName).phone(phone).build();
     }
 }
